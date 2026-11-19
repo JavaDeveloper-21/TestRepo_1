@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Multithreading and Concurrency in Java",
+    "description": "Understand concurrent execution in Java and learn to build reliable, thread-safe applications. Cover thread creation and lifecycle, Runnable and Callable, synchronization, race conditions, deadlocks, and thread safety. Explore ExecutorService, CompletableFuture, concurrent collections, and atomic variables through practical examples.",
+    "topics": [
+      {
+        "title": "Thread Fundamentals, Creation and Lifecycle",
+        "duration": "90 mins",
+        "description": "Understand Java threads, their lifecycle, and the different ways to create and manage concurrent tasks.",
+        "subtopics": [
+          "Introduction to processes and threads",
+          "Multithreading and its advantages",
+          "Thread lifecycle and states",
+          "Creating threads by extending Thread",
+          "Creating threads using Runnable",
+          "Starting and managing threads",
+          "Thread methods: sleep, join, interrupt, and yield",
+          "Runnable vs extending Thread"
+        ]
+      },
+      {
+        "title": "Callable, Future and Task Execution",
+        "duration": "90 mins",
+        "description": "Execute tasks that return results and handle asynchronous task completion using Java concurrency APIs.",
+        "subtopics": [
+          "Introduction to Callable",
+          "Runnable vs Callable",
+          "Future and retrieving task results",
+          "Submitting tasks and handling exceptions",
+          "Callable with ExecutorService",
+          "Practical task execution examples"
+        ]
+      },
+      {
+        "title": "Synchronization, Race Conditions and Thread Safety",
+        "duration": "120 mins",
+        "description": "Understand problems caused by shared mutable data and apply synchronization techniques to protect critical sections.",
+        "subtopics": [
+          "Shared resources and critical sections",
+          "Race conditions with practical scenarios",
+          "Synchronized methods and blocks",
+          "Object-level and class-level locking",
+          "Thread safety and visibility basics",
+          "Using volatile where appropriate",
+          "Designing thread-safe classes"
+        ]
+      },
+      {
+        "title": "Deadlocks and Concurrent Programming Problems",
+        "duration": "75 mins",
+        "description": "Identify common concurrency problems and learn practical techniques to prevent deadlocks and unsafe thread interactions.",
+        "subtopics": [
+          "Introduction to deadlock",
+          "Conditions required for deadlock",
+          "Deadlock identification with code examples",
+          "Deadlock prevention and avoidance techniques",
+          "Starvation and livelock awareness",
+          "Safe lock-management practices"
+        ]
+      },
+      {
+        "title": "ExecutorService and Thread Pool Management",
+        "duration": "120 mins",
+        "description": "Manage concurrent tasks efficiently using executor services and reusable thread pools instead of creating threads manually.",
+        "subtopics": [
+          "Limitations of manually creating threads",
+          "Introduction to Executor and ExecutorService",
+          "Fixed, cached, single-thread, and scheduled thread pools",
+          "execute() vs submit()",
+          "Submitting Runnable and Callable tasks",
+          "Future and task result handling",
+          "Shutting down executors safely",
+          "Thread pool best practices"
+        ]
+      },
+      {
+        "title": "Concurrent Collections and Atomic Variables",
+        "duration": "90 mins",
+        "description": "Use thread-safe data structures and atomic operations to coordinate access to shared data in concurrent applications.",
+        "subtopics": [
+          "Limitations of standard collections during concurrent access",
+          "ConcurrentHashMap",
+          "CopyOnWriteArrayList",
+          "BlockingQueue and common implementations",
+          "AtomicInteger and AtomicLong",
+          "Compare-and-set (CAS) concept",
+          "Choosing suitable concurrent utilities"
+        ]
+      },
+      {
+        "title": "Asynchronous Programming with CompletableFuture",
+        "duration": "120 mins",
+        "description": "Build asynchronous workflows by composing tasks, combining results, and handling errors using CompletableFuture.",
+        "subtopics": [
+          "Introduction to asynchronous programming",
+          "CompletableFuture and its relationship with Future",
+          "supplyAsync() and runAsync()",
+          "thenApply(), thenAccept(), and thenRun()",
+          "Combining tasks with thenCombine() and allOf()",
+          "Handling exceptions with exceptionally() and handle()",
+          "Custom Executor usage",
+          "Practical asynchronous workflow examples"
+        ]
+      },
+      {
+        "title": "Concurrency Best Practices and Practical Scenarios",
+        "duration": "75 mins",
+        "description": "Apply concurrency concepts to realistic Java scenarios and choose appropriate tools for reliable concurrent application design.",
+        "subtopics": [
+          "Choosing between synchronized and concurrent utilities",
+          "Choosing threads, thread pools, and asynchronous tasks",
+          "Avoiding shared mutable state where possible",
+          "Thread-safe design principles",
+          "Common concurrency mistakes and debugging approaches",
+          "Producer-consumer and parallel task scenarios"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "title": "Microservices Architecture with Spring Boot and Spring Cloud",
+    "description": "Introduces microservices architecture and the Spring Cloud ecosystem for building distributed applications. Students will learn service registration and discovery, API Gateway, inter-service communication, centralized configuration, and fault-tolerance patterns through practical Spring Boot implementations.",
+    "topics": [
+      {
+        "title": "Microservices Architecture and Fundamentals",
+        "duration": "90 mins",
+        "description": "Understand microservices architecture, compare monolithic and microservices-based applications, and explore the principles, benefits, challenges, and common design patterns used to build distributed systems.",
+        "subtopics": [
+          "Introduction to software architecture",
+          "Understanding Monolithic Architecture",
+          "Understanding Microservices Architecture",
+          "Monolithic versus Microservices Architecture",
+          "Advantages of Microservices Architecture",
+          "Challenges and limitations of microservices",
+          "Microservices design principles",
+          "Service independence and bounded contexts",
+          "Common microservices design patterns",
+          "Introduction to distributed systems"
+        ]
+      },
+      {
+        "title": "Service Registry and Discovery Using Eureka Server and Client",
+        "duration": "90 mins",
+        "description": "Learn how microservices register themselves with a service registry and discover other services dynamically. Implement Netflix Eureka Server and Eureka Clients, explore the Eureka dashboard, and understand heartbeats and service-name-based discovery.",
+        "subtopics": [
+          "Introduction to service registration and discovery",
+          "Need for service discovery in microservices",
+          "Introduction to Netflix Eureka",
+          "Creating and configuring a Eureka Server",
+          "Creating and configuring a Eureka Client",
+          "Registering microservices with Eureka",
+          "Understanding the Eureka dashboard",
+          "Service heartbeats and lease renewal",
+          "Service discovery using application names",
+          "Calling registered services by service name",
+          "Handling service registration and discovery issues"
+        ]
+      },
+      {
+        "title": "API Gateway Using Spring Cloud Gateway",
+        "duration": "90 mins",
+        "description": "Understand the API Gateway pattern and implement Spring Cloud Gateway as a single entry point for client requests. Configure routes, predicates, filters, load-balanced service URIs, and cross-cutting concerns.",
+        "subtopics": [
+          "Introduction to the API Gateway pattern",
+          "Need for an API Gateway in microservices",
+          "Introduction to Spring Cloud Gateway",
+          "Creating and configuring a Gateway application",
+          "Understanding routes and route configuration",
+          "Configuring route predicates",
+          "Using gateway filters",
+          "Global filters and route-specific filters",
+          "Understanding lb:// service URIs",
+          "Integrating Gateway with Eureka service discovery",
+          "Handling cross-cutting concerns at the Gateway",
+          "Testing requests through the API Gateway"
+        ]
+      },
+      {
+        "title": "Inter-Service Communication Using RestTemplate, WebClient and OpenFeign",
+        "duration": "120 mins",
+        "description": "Understand how independent microservices communicate with one another. Implement HTTP communication using RestTemplate, WebClient, and OpenFeign, and explore service-name-based communication and client-side load balancing.",
+        "subtopics": [
+          "Introduction to inter-service communication",
+          "Synchronous versus asynchronous communication overview",
+          "Calling one microservice from another",
+          "Using RestTemplate for service communication",
+          "Using WebClient for service communication",
+          "Introduction to OpenFeign",
+          "Creating Feign clients using @FeignClient",
+          "Configuring service names and service URLs",
+          "Integrating OpenFeign with Eureka",
+          "Client-side load balancing using Spring Cloud LoadBalancer",
+          "Passing request headers and request bodies between services",
+          "Handling errors and responses from downstream services",
+          "Comparing RestTemplate, WebClient and OpenFeign"
+        ]
+      },
+      {
+        "title": "Centralized Configuration Using Spring Cloud Config",
+        "duration": "90 mins",
+        "description": "Manage configuration for multiple microservices from a centralized location using Spring Cloud Config. Set up a Config Server and clients, use Git-backed configuration files and profiles, and refresh application properties at runtime.",
+        "subtopics": [
+          "Introduction to centralized configuration",
+          "Need for externalized configuration in microservices",
+          "Introduction to Spring Cloud Config",
+          "Creating and configuring a Config Server",
+          "Connecting the Config Server to a Git repository",
+          "Creating Git-backed configuration files",
+          "Configuring Spring Cloud Config clients",
+          "Managing configuration for multiple services",
+          "Environment-specific configuration using profiles",
+          "Using @RefreshScope",
+          "Refreshing configuration at runtime",
+          "Using the refresh endpoint",
+          "Troubleshooting Config Server and client connectivity"
+        ]
+      },
+      {
+        "title": "Fault Tolerance with Resilience4j: Circuit Breaker, Retry and Fallback",
+        "duration": "120 mins",
+        "description": "Understand fault tolerance in distributed systems and prevent cascading failures when dependent services become unavailable. Implement Resilience4j patterns including Circuit Breaker, Retry, Fallback, Rate Limiter, Time Limiter, and Bulkhead.",
+        "subtopics": [
+          "Introduction to fault tolerance in microservices",
+          "Understanding service failures and cascading failures",
+          "Introduction to Resilience4j",
+          "Adding and configuring Resilience4j dependencies",
+          "Circuit Breaker pattern and its purpose",
+          "Circuit Breaker states: CLOSED, OPEN and HALF_OPEN",
+          "Configuring Circuit Breaker properties",
+          "Implementing fallback methods",
+          "Retry pattern and retry configuration",
+          "Rate Limiter pattern",
+          "Time Limiter pattern",
+          "Bulkhead pattern and limiting concurrent calls",
+          "Integrating Resilience4j with Spring Boot services",
+          "Testing fault-tolerance scenarios"
+        ]
+      }
+    ]
+  }
+]

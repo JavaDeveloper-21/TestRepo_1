@@ -1,0 +1,318 @@
+[
+  {
+    "title": "Spring Boot",
+    "description": "Covers Spring Boot application development, from Maven build management and Spring Boot fundamentals to database integration, monitoring, logging, REST API development, Spring Data JPA, validation, API documentation, and REST client communication. Students will learn to build, test, and maintain Java backend applications using the Spring ecosystem.",
+    "topics": [
+      {
+        "title": "Maven Basics, Build Lifecycle, Dependency Management and pom.xml",
+        "duration": "90 mins",
+        "description": "Understand Maven as a build automation and project management tool. Learn the standard project structure, build lifecycle, commonly used commands, and dependency management through the pom.xml file.",
+        "subtopics": [
+          "Introduction to Apache Maven",
+          "Maven features and advantages",
+          "Standard Maven project structure",
+          "Understanding groupId, artifactId, and version",
+          "Introduction to pom.xml",
+          "Adding and configuring dependencies",
+          "Dependency scopes: compile, provided, runtime, test, and system",
+          "Understanding transitive dependencies",
+          "Maven local, central, and remote repositories",
+          "Dependency management and version control",
+          "Maven build lifecycle and its phases",
+          "Common Maven commands: clean, compile, test, package, install, and deploy",
+          "Introduction to Maven plugins"
+        ]
+      },
+      {
+        "title": "Spring Boot Introduction, Advantages and First Spring Boot Application",
+        "duration": "90 mins",
+        "description": "Understand Spring Boot, its features, and advantages over traditional Spring configuration. Generate, configure, and run a first Spring Boot application using Spring Initializr.",
+        "subtopics": [
+          "Introduction to Spring Boot",
+          "Spring Framework versus Spring Boot",
+          "Features and advantages of Spring Boot",
+          "Convention over configuration",
+          "Spring Initializr and project generation",
+          "Spring Boot project structure",
+          "Understanding starter dependencies",
+          "Running the first Spring Boot application",
+          "Introduction to embedded servers"
+        ]
+      },
+      {
+        "title": "Database Connection and JSP UI Setup in Spring Boot",
+        "duration": "90 mins",
+        "description": "Configure database connectivity in a Spring Boot application and set up JSP as a view technology. Explore datasource properties, database connection verification, JSP view resolution, and project setup considerations.",
+        "subtopics": [
+          "Adding database and web dependencies",
+          "Datasource configuration in application.properties",
+          "Database URL, username, password, and driver configuration",
+          "Connecting Spring Boot with MySQL",
+          "Verifying database connectivity",
+          "Introduction to JSP integration",
+          "Configuring JSP view resolver properties",
+          "Controller methods returning JSP views",
+          "Packaging and deployment considerations for JSP"
+        ]
+      },
+      {
+        "title": "Spring Boot Internals: run() Method and @SpringBootApplication",
+        "duration": "75 mins",
+        "description": "Explore how a Spring Boot application starts and understand the role of SpringApplication.run(), application context creation, component scanning, and auto-configuration.",
+        "subtopics": [
+          "Understanding the Spring Boot main class",
+          "SpringApplication class and run() method",
+          "Spring Boot application startup sequence",
+          "Understanding @SpringBootApplication",
+          "@SpringBootConfiguration",
+          "@EnableAutoConfiguration",
+          "@ComponentScan",
+          "Introduction to auto-configuration",
+          "ApplicationContext creation and bean registration"
+        ]
+      },
+      {
+        "title": "Lombok and Its Annotations",
+        "duration": "75 mins",
+        "description": "Understand Project Lombok and how it reduces Java boilerplate code. Explore annotations for generating constructors, getters, setters, object methods, and builder patterns.",
+        "subtopics": [
+          "Introduction to Lombok and its advantages",
+          "Adding Lombok dependency and IDE support",
+          "@Getter and @Setter",
+          "@ToString",
+          "@EqualsAndHashCode",
+          "@NoArgsConstructor and @AllArgsConstructor",
+          "@RequiredArgsConstructor",
+          "@Data",
+          "@Builder",
+          "Using Lombok in entity, DTO, and model classes"
+        ]
+      },
+      {
+        "title": "Spring Boot Actuator",
+        "duration": "60 mins",
+        "description": "Use Spring Boot Actuator to monitor and manage applications. Explore health, information, and metrics endpoints, endpoint configuration, and security considerations.",
+        "subtopics": [
+          "Introduction to Spring Boot Actuator",
+          "Adding the Actuator dependency",
+          "Understanding Actuator endpoints",
+          "Health endpoint",
+          "Info endpoint",
+          "Metrics endpoint",
+          "Exposing and configuring endpoints",
+          "Custom application information",
+          "Securing sensitive Actuator endpoints"
+        ]
+      },
+      {
+        "title": "Logging in Spring Boot: Frameworks and Logging Levels",
+        "duration": "60 mins",
+        "description": "Understand application logging and its importance in debugging and monitoring. Explore common logging frameworks, logging levels, and Spring Boot logging configuration.",
+        "subtopics": [
+          "Introduction to logging",
+          "System.out.println() versus application logging",
+          "Introduction to SLF4J",
+          "Logback and Log4j2 overview",
+          "Logging levels: TRACE, DEBUG, INFO, WARN, and ERROR",
+          "Creating and using a Logger",
+          "Configuring logging in application.properties",
+          "Custom log patterns and log files",
+          "Logging best practices"
+        ]
+      },
+      {
+        "title": "REST API Fundamentals and HTTP",
+        "duration": "75 mins",
+        "description": "Understand REST architecture and HTTP communication between clients and servers. Explore REST principles, resources, endpoints, HTTP methods, request and response structures, and status code categories.",
+        "subtopics": [
+          "Introduction to web services and REST APIs",
+          "REST architectural constraints",
+          "Resources, URIs, and endpoints",
+          "HTTP request and response structure",
+          "HTTP methods: GET, POST, PUT, PATCH, and DELETE",
+          "HTTP headers and content types",
+          "JSON request and response bodies",
+          "Introduction to statelessness and idempotency",
+          "Overview of HTTP status code categories"
+        ]
+      },
+      {
+        "title": "Building CRUD REST APIs Using @RestController and Mapping Annotations",
+        "duration": "90 mins",
+        "description": "Develop RESTful CRUD endpoints using Spring Boot. Explore controller annotations, bind request data, and implement create, read, update, and delete operations.",
+        "subtopics": [
+          "Introduction to @RestController",
+          "Difference between @Controller and @RestController",
+          "@RequestMapping",
+          "@GetMapping",
+          "@PostMapping",
+          "@PutMapping",
+          "@PatchMapping",
+          "@DeleteMapping",
+          "Handling path variables using @PathVariable",
+          "Receiving request bodies using @RequestBody",
+          "Implementing CRUD REST endpoints",
+          "Testing APIs using Postman"
+        ]
+      },
+      {
+        "title": "HTTP Responses, Status Codes and ResponseEntity",
+        "duration": "60 mins",
+        "description": "Understand how Spring Boot REST APIs return HTTP responses. Explore status codes, response headers, response bodies, and the ResponseEntity class for controlling complete HTTP responses.",
+        "subtopics": [
+          "Introduction to HTTP responses",
+          "HTTP status code categories",
+          "Common success, client-error, and server-error status codes",
+          "Returning response data from controller methods",
+          "Introduction to ResponseEntity",
+          "Using ResponseEntity with status codes",
+          "Setting response headers and body",
+          "ResponseEntity builder methods",
+          "Selecting appropriate status codes for CRUD operations"
+        ]
+      },
+      {
+        "title": "Spring Data JPA: CrudRepository, Pagination and Sorting",
+        "duration": "90 mins",
+        "description": "Understand Spring Data JPA repository abstractions and use CrudRepository for common database operations. Implement pagination and sorting to retrieve records efficiently.",
+        "subtopics": [
+          "Introduction to Spring Data JPA",
+          "Repository abstraction and CrudRepository",
+          "Creating repository interfaces",
+          "save(), findById(), findAll(), existsById(), and delete methods",
+          "Understanding Optional return types",
+          "Introduction to pagination",
+          "Pageable and PageRequest",
+          "Understanding Page and Slice",
+          "Sorting using Sort",
+          "Combining pagination and sorting",
+          "Testing paginated and sorted endpoints"
+        ]
+      },
+      {
+        "title": "JpaRepository and JPA Queries: Query Methods and @Query Annotation",
+        "duration": "90 mins",
+        "description": "Explore JpaRepository and its capabilities over CrudRepository. Learn to create derived query methods and define custom JPQL or native SQL queries using the @Query annotation.",
+        "subtopics": [
+          "Introduction to JpaRepository",
+          "CrudRepository versus JpaRepository",
+          "JpaRepository methods and capabilities",
+          "Creating derived query methods",
+          "Query method keywords: And, Or, Between, LessThan, GreaterThan, Like, and In",
+          "Sorting and ordering in query methods",
+          "Introduction to the @Query annotation",
+          "Writing JPQL queries using @Query",
+          "Writing native SQL queries using nativeQuery",
+          "Using named parameters with @Param",
+          "Update and delete queries using @Modifying",
+          "Practical custom query examples"
+        ]
+      },
+      {
+        "title": "Swagger and OpenAPI Documentation",
+        "duration": "60 mins",
+        "description": "Understand API documentation and configure Swagger UI with the OpenAPI specification. Document REST endpoints, request parameters, request bodies, response models, and status codes.",
+        "subtopics": [
+          "Introduction to API documentation",
+          "Swagger and OpenAPI overview",
+          "Adding Springdoc OpenAPI dependency",
+          "Configuring Swagger UI",
+          "Exploring generated API documentation",
+          "Documenting controllers and endpoints",
+          "Documenting request parameters and request bodies",
+          "Documenting response codes and schemas",
+          "Testing REST APIs through Swagger UI"
+        ]
+      },
+      {
+        "title": "DTO and ModelMapper in Spring Boot",
+        "duration": "75 mins",
+        "description": "Understand Data Transfer Objects and their role in separating API models from persistence entities. Use ModelMapper to convert between DTOs and entity objects.",
+        "subtopics": [
+          "Introduction to DTO",
+          "Why DTOs are used in application architecture",
+          "Entity classes versus DTO classes",
+          "Creating request and response DTOs",
+          "Introduction to ModelMapper",
+          "Adding and configuring ModelMapper",
+          "Mapping entity objects to DTOs",
+          "Mapping DTOs to entity objects",
+          "Handling nested object mapping",
+          "Using DTOs in controller and service layers"
+        ]
+      },
+      {
+        "title": "Exception Handling in Spring Boot REST APIs",
+        "duration": "75 mins",
+        "description": "Implement centralized exception handling in Spring Boot REST applications. Explore custom exceptions, controller-level and global exception handling, and structured error responses.",
+        "subtopics": [
+          "Introduction to exception handling in REST APIs",
+          "Handling exceptions using try-catch",
+          "Creating custom exception classes",
+          "@ExceptionHandler",
+          "@ControllerAdvice and @RestControllerAdvice",
+          "Global exception handling",
+          "Handling resource-not-found exceptions",
+          "Handling validation and request errors",
+          "Creating structured error response objects",
+          "Returning appropriate HTTP status codes"
+        ]
+      },
+      {
+        "title": "Validation in Spring Boot Using Spring Validator",
+        "duration": "75 mins",
+        "description": "Validate incoming request data using Bean Validation annotations and custom validation logic through Spring's Validator interface. Learn to return clear validation error responses.",
+        "subtopics": [
+          "Introduction to validation",
+          "Adding validation dependencies",
+          "Bean Validation and Jakarta Validation overview",
+          "@NotNull, @NotBlank, and @NotEmpty",
+          "@Size, @Min, and @Max",
+          "@Email, @Pattern, and numeric validation",
+          "Using @Valid and @Validated",
+          "Handling MethodArgumentNotValidException",
+          "Introduction to the Spring Validator interface",
+          "Implementing custom validation logic",
+          "Returning meaningful validation error responses"
+        ]
+      },
+      {
+        "title": "Spring Profiles and Environment-Based Configuration",
+        "duration": "60 mins",
+        "description": "Maintain separate configurations for development, testing, and production environments using Spring Profiles and externalized configuration.",
+        "subtopics": [
+          "Introduction to Spring Profiles",
+          "Need for environment-specific configuration",
+          "Creating application-dev.properties",
+          "Creating application-test.properties",
+          "Creating application-prod.properties",
+          "Activating profiles using spring.profiles.active",
+          "Using @Profile on configuration classes and beans",
+          "Profile-specific bean registration",
+          "Externalized configuration and environment variables",
+          "Running applications with different profiles"
+        ]
+      },
+      {
+        "title": "REST Clients in Spring Boot: RestTemplate and WebClient",
+        "duration": "90 mins",
+        "description": "Understand how Spring Boot applications communicate with external REST APIs. Explore RestTemplate for synchronous HTTP communication and WebClient for reactive, non-blocking communication.",
+        "subtopics": [
+          "Introduction to REST client communication",
+          "Understanding service-to-service communication",
+          "Introduction to RestTemplate",
+          "Configuring RestTemplate as a Spring bean",
+          "Using getForObject() and getForEntity()",
+          "Using postForObject() and postForEntity()",
+          "Using exchange() with HttpEntity and HttpMethod",
+          "Passing request headers and request bodies",
+          "Introduction to WebClient",
+          "Configuring WebClient.Builder",
+          "Using retrieve() and handling responses",
+          "Synchronous versus reactive and non-blocking communication",
+          "RestTemplate versus WebClient"
+        ]
+      }
+    ]
+  }
+]

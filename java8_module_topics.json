@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Java 8 Features",
+    "description": "Explore Java 8 features that make Java development more expressive and efficient. Learn functional programming with functional interfaces, lambda expressions, method references, and interface enhancements. Use the Stream API to process collections, the Date and Time API to handle dates and times, and Optional to reduce null-related errors.",
+    "topics": [
+      {
+        "title": "Functional Interfaces and Lambda Expressions",
+        "duration": "90 mins",
+        "description": "Understand functional programming in Java 8 and write concise implementations using lambda expressions.",
+        "subtopics": [
+          "Introduction to functional programming",
+          "Functional interface concept and rules",
+          "Built-in interfaces: Predicate, Function, Consumer, and Supplier",
+          "Lambda expression syntax and variations",
+          "Using lambda expressions with collections",
+          "Custom functional interfaces"
+        ]
+      },
+      {
+        "title": "Interface Enhancements and Method References",
+        "duration": "75 mins",
+        "description": "Learn Java 8 interface enhancements and use method references as a concise alternative to certain lambda expressions.",
+        "subtopics": [
+          "Default methods in interfaces",
+          "Static methods in interfaces",
+          "Overriding and inheriting default methods",
+          "Introduction to method references",
+          "Static, instance, and constructor method references",
+          "Lambda expressions vs method references"
+        ]
+      },
+      {
+        "title": "Stream API and Collection Processing",
+        "duration": "120 mins",
+        "description": "Process and transform collection data using Stream API operations and collectors.",
+        "subtopics": [
+          "Introduction to Stream API",
+          "Creating streams from collections and arrays",
+          "Intermediate operations: filter, map, sorted, distinct, and limit",
+          "Terminal operations: forEach, collect, count, reduce, and min/max",
+          "Collectors: toList, groupingBy, and partitioningBy",
+          "Optional results from stream operations",
+          "Sequential vs parallel streams",
+          "Practical collection-processing examples"
+        ]
+      },
+      {
+        "title": "Java 8 Date and Time API",
+        "duration": "60 mins",
+        "description": "Use the java.time API to work with dates, times, durations, periods, and formatting.",
+        "subtopics": [
+          "Limitations of legacy Date and Calendar APIs",
+          "LocalDate, LocalTime, and LocalDateTime",
+          "Period and Duration",
+          "Date and time formatting with DateTimeFormatter",
+          "Parsing and comparing dates and times"
+        ]
+      },
+      {
+        "title": "Optional Class and Null Handling",
+        "duration": "60 mins",
+        "description": "Use Optional to represent potentially absent values and reduce common null-related errors.",
+        "subtopics": [
+          "Introduction to Optional",
+          "Creating Optional objects: of, ofNullable, and empty",
+          "Checking values with isPresent and isEmpty",
+          "Handling values with ifPresent, orElse, orElseGet, and orElseThrow",
+          "Transforming values with map and flatMap",
+          "Best practices and common mistakes"
+        ]
+      }
+    ]
+  }
+]
